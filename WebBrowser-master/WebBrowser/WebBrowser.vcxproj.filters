@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{0ab7cd9f-1ed8-45c3-927d-bf3f53f8cead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webbrowser_test">
+      <UniqueIdentifier>{5147adb5-6bbc-49cf-a1bc-33be62c55b34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\app.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\mf.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Library.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WebBrowser.cpp" />
+    <ClCompile Include="base\path_helper.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser_test\call_js_test.cpp">
+      <Filter>webbrowser_test</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser_test\js_call_client_test.cpp">
+      <Filter>webbrowser_test</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser_test\main_form.cpp">
+      <Filter>webbrowser_test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WebBrowser.h" />
+    <ClInclude Include="base\path_helper.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser_test\call_js_test.h">
+      <Filter>webbrowser_test</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser_test\js_call_client_test.h">
+      <Filter>webbrowser_test</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser_test\main_form.h">
+      <Filter>webbrowser_test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
